@@ -1,0 +1,27 @@
+# === BACKEND ===
+backend/node_modules/
+backend/package-lock.json
+backend/.env
+backend/.DS_Store
+backend/*.log
+
+# === FRONTEND ===
+frontend/node_modules/
+frontend/.angular/
+frontend/.vscode/
+frontend/package-lock.json
+frontend/.DS_Store
+frontend/.editorconfig
+
+# Archivos generados
+frontend/dist/
+frontend/tmp/
+
+# Angular build output
+frontend/build/
+frontend/.output/
+
+# === SISTEMA OPERATIVO ===
+*.log
+Thumbs.db
+.DS_Store
