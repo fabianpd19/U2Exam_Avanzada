@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <h2>Gestión de Estudiantes</h2>
+
+  <div class="mb-3">
+    <label>Cédula:</label>
+    <input class="form-control" [(ngModel)]="cedulaBuscar" />
+    <button class="btn btn-primary mt-2" (click)="buscar()">Buscar</button>
+  </div>
+
+  <div *ngIf="mensaje" class="alert alert-info">{{ mensaje }}</div>
+
+  <div *ngIf="estudiante">
+    <h4>Datos del Estudiante</h4>
+
+    <label>Nombre:</label>
+    <input class="form-control" [(ngModel)]="estudiante.nombre"><br>
+
+    <label>Apellido:</label>
+    <input class="form-control" [(ngModel)]="estudiante.apellido"><br>
+
+    <label>Nivel:</label>
+    <input type="number" class="form-control" [(ngModel)]="estudiante.nivel"><br>
+
+    <button class="btn btn-success" (click)="actualizar()">Actualizar</button>
+  </div>
+</div>
